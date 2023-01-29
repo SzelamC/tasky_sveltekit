@@ -15,7 +15,12 @@
 		try {
 			const res = await trpc($page).user.login.mutate(userInput);
 			console.log(res);
-			goto('/');
+			if (res.statusCode !== 200) {
+				goto('/');
+				console.log('Login failed');
+				return;
+			}
+			console.log('Login success');
 		} catch (err) {
 			console.error(err);
 		}
