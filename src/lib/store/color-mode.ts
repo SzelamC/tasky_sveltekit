@@ -9,7 +9,7 @@ export default function useColorMode() {
 	if (browser) {
 		if (localStorage.colorMode) {
 			if (localStorage.colorMode === 'dark') {
-				document.documentElement.dataset.theme = 'dracula';
+				document.documentElement.dataset.theme = 'night';
 				set('dark');
 				localStorage.colorMode = 'dark';
 			} else {
@@ -19,7 +19,7 @@ export default function useColorMode() {
 			}
 		} else {
 			if (window.matchMedia('(prefer-color-scheme: dark)')) {
-				document.documentElement.dataset.theme = 'dracula';
+				document.documentElement.dataset.theme = 'night';
 				set('dark');
 				localStorage.colorMode = 'dark';
 			} else {
@@ -39,7 +39,7 @@ export default function useColorMode() {
 				return 'light';
 			} else {
 				localStorage.colorMode = 'dark';
-				document.documentElement.dataset.theme = 'dracula';
+				document.documentElement.dataset.theme = 'night';
 				return 'dark';
 			}
 		});
