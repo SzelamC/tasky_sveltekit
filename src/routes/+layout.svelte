@@ -5,9 +5,9 @@
 	useColorMode();
 </script>
 
-<div class="h-full flex flex-col items-center">
+<div class="flex h-full flex-col items-center">
 	<Navbar />
-	<main class="max-w-6xl w-full h-full">
+	<main class="h-full w-full max-w-6xl">
 		<slot />
 	</main>
 </div>

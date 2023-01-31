@@ -2,14 +2,14 @@
 	import { ColorSwitch } from '../switch';
 </script>
 
-<nav class="navbar bg-base-200 sticky top-0">
+<nav class="navbar sticky top-0 bg-base-200">
 	<div class="flex-none">
-		<button class="btn btn-square btn-ghost rounded-xl">
+		<button class="btn-ghost btn-square btn rounded-xl">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24"
-				class="inline-block w-5 h-5 stroke-current"
+				class="inline-block h-5 w-5 stroke-current"
 				><path
 					stroke-linecap="round"
 					stroke-linejoin="round"
@@ -20,12 +20,12 @@
 		</button>
 	</div>
 	<div class="flex-1">
-		<a href="/" class="btn btn-md btn-ghost normal-case text-3xl rounded-xl">Tasky</a>
+		<a href="/" class="btn-ghost btn-md btn rounded-xl text-3xl normal-case">Tasky</a>
 	</div>
 	<div class="flex-none gap-10">
 		<a
 			href="/accounts/login"
-			class="text-lg text-primary hover:text-primary-focus font-bold relative text-slide">Sign in</a
+			class="text-slide relative text-lg font-bold text-primary hover:text-primary-focus">Sign in</a
 		>
 		<ColorSwitch />
 	</div>

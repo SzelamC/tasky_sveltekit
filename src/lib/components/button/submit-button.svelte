@@ -2,4 +2,4 @@
 	export let buttonText: string;
 </script>
 
-<button type="submit" class="btn btn-primary rounded-3xl">{buttonText}</button>
+<button type="submit" class="btn-primary btn rounded-3xl">{buttonText}</button>

@@ -3,8 +3,7 @@
 	export let id: string;
 	export let label: string;
 	export let placeholder: string;
-  export let value: string;
-
+	export let value: string;
 
 	function setInputType(node: HTMLInputElement) {
 		node.type = type;
@@ -20,6 +19,6 @@
 		{placeholder}
 		use:setInputType
 		bind:value
-		class="input input-md input-primary input-bordered w-full rounded-3xl"
+		class="input-bordered input-primary input input-md w-full rounded-3xl"
 	/>
 </span>

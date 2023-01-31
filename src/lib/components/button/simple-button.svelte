@@ -1,3 +1,3 @@
-<button class="btn btn-sm btn-accent rounded-full" type="button">
+<button class="btn-accent btn-sm btn rounded-full" type="button">
 	<slot />
 </button>
