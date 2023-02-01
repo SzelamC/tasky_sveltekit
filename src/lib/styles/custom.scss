@@ -1,11 +1,11 @@
-	.text-slide::after {
-		content: '';
-		@apply bg-primary left-0 right-0 bottom-0 h-0.5 absolute transition-transform duration-500;
-		transform-origin: right;
-		transform: scale(0);
-	}
+.text-slide::after {
+	content: '';
+	@apply bg-primary left-0 right-0 bottom-0 h-0.5 absolute transition-transform duration-500;
+	transform-origin: right;
+	transform: scale(0);
+}
 
-	.text-slide:hover::after {
-		transform: scale(1);
-		transform-origin: left;
-	}
+.text-slide:hover::after {
+	transform: scale(1);
+	transform-origin: left;
+}

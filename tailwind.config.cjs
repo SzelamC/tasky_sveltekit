@@ -5,7 +5,8 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				unbounded: ['Unbounded'],
-				mplus: ["'M PLUS Rounded 1c'"]
+				mplus: ["'M PLUS Rounded 1c'"],
+        major: ["'Major Mono Display'"]
 			}
 		}
 	},
