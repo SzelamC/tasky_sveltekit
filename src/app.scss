@@ -7,7 +7,7 @@
 
 body,
 html {
-	@apply bg-base-300 h-screen;
+	@apply bg-base-300 h-screen overflow-auto;
 }
 
 * {

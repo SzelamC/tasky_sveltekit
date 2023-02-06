@@ -1,38 +1,28 @@
-<div class="grid h-1/2 place-items-center">
-	<h1 class="typewriter relative max-w-fit font-major text-6xl">Welcome to tasky...</h1>
+<script lang="ts">
+</script>
+
+<div class="flex h-full flex-col justify-center gap-8">
+	<h1 class="fade text-center font-major text-6xl">Welcome to tasky</h1>
+	<h1 class="fade text-center font-major text-6xl">Mark your task now</h1>
 </div>
 
 <style lang="scss">
-	.typewriter::before,
-	.typewriter::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+	.fade:first-child {
+		animation: fade-in 1s ease-in 0.5s forwards;
+		opacity: 0;
+		transform: translateX(-50px);
 	}
 
-	.typewriter::before {
-		@apply bg-base-300;
-		animation: type-writer 4s steps(19) 1s forwards;
+	.fade:nth-child(2) {
+		animation: fade-in 1s ease-in 1s forwards;
+		opacity: 0;
+		transform: translateX(-50px);
 	}
 
-	.typewriter::after {
-		@apply bg-current;
-		width: 0.05em;
-		animation: type-writer 4s steps(19) 1s forwards, caret-blink 750ms steps(19) infinite;
-	}
-
-	@keyframes type-writer {
+	@keyframes fade-in {
 		to {
-			left: 100%;
-		}
-	}
-
-	@keyframes caret-blink {
-		to {
-			background: transparent;
+			opacity: 1;
+			transform: translateX(0px);
 		}
 	}
 </style>

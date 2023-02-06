@@ -2,7 +2,7 @@
 	import { ColorSwitch } from '../switch';
 </script>
 
-<nav class="navbar sticky top-0 bg-base-200">
+<nav class="navbar sticky top-0 bg-base-100 bg-opacity-20 backdrop-blur-sm">
 	<div class="flex-none">
 		<button class="btn-ghost btn-square btn rounded-xl">
 			<svg
@@ -27,6 +27,8 @@
 			href="/accounts/login"
 			class="text-slide relative text-lg font-bold text-primary hover:text-primary-focus">Sign in</a
 		>
-		<ColorSwitch />
+		<span class="hidden md:inline">
+			<ColorSwitch />
+		</span>
 	</div>
 </nav>
