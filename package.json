@@ -10,7 +10,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
-		"db:push": "prisma db push"
+		"db:dev": "dotenv -e .env.dev -- pnpx prisma db push",
+		"db:stag": "dotenv -e .env.staging -- pnpx prisma db push"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^1.0.0",
@@ -41,6 +42,7 @@
 		"@trpc/client": "^10.9.0",
 		"@trpc/server": "^10.9.0",
 		"argon2": "^0.30.3",
+		"dotenv-cli": "^7.0.0",
 		"trpc-sveltekit": "^3.2.4",
 		"zod": "^3.20.2"
 	}
